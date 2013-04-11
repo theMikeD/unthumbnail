@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# This small script will delete all image files generated automatically by Wordpress.
+# These files are created whenever the Media Uploader is used to upload image files.
+# Must be run from a command shell in the uploads folder.
+
+#2x2
+find . -regex '.*/.*-[1-9][0-9]x[1-9][0-9]\.jpg' -exec rm {} \;
+
+#2x3
+find . -regex '.*/.*-[1-9][0-9]x[1-9][0-9][0-9]\.jpg' -exec rm {} \;
+
+#3x2
+find . -regex '.*/.*-[1-9][0-9][0-9]x[1-9][0-9]\.jpg' -exec rm {} \;
+
+#3x3
+find . -regex '.*/.*-[1-9][0-9][0-9]x[1-9][0-9][0-9]\.jpg' -exec rm {} \;
+
+#3x4
+find . -regex '.*/.*-[1-9][0-9][0-9]x[1-9][0-9][0-9][0-9]\.jpg' -exec rm {} \;
+
+#4x3
+find . -regex '.*/.*-[1-9][0-9][0-9][0-9]x[1-9][0-9][0-9]\.jpg' -exec rm {} \;
+
+#4x4
+find . -regex '.*/.*-[1-9][0-9][0-9][0-9]x[1-9][0-9][0-9][0-9]\.jpg' -exec rm {} \;
