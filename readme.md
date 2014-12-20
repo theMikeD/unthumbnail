@@ -4,7 +4,7 @@
 A script to delete all image files generated automatically by Wordpress.
 
 ### Overview
-Whenever an image file is uploaded into Wordpress using the Media Uploader, a variety of additional image files are derived from it for use by owrdpress and various themes. These files are all named using the sname nomencalture:
+Whenever an image file is uploaded into Wordpress using the Media Uploader, a variety of additional image files are derived from it for use by Wordpress and various themes. These files are all named using the same nomenclature:
 
 	<original file name>-[1 or more numbers]x[1 or more numbers].ext
 
